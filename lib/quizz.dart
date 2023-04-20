@@ -33,7 +33,9 @@ class _QuizzState extends State<Quizz> {
     }
 
     if (activeScreen.runtimeType == StartScreen) {
-      activeScreen = const ResultsScreen();
+      activeScreen = ResultsScreen(
+        chosenAnswers: selectedAnswers,
+      );
     }
   }
 
